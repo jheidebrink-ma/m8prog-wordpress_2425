@@ -1,0 +1,14 @@
+/**
+ * Theme Name: M8PROG-2425-CHILD
+ * Author: Jasper
+ * Template: cue
+*/
+
+body{
+    background: pink;
+}
+
+div {
+    color:aliceblue;
+    border: dotted 1px red;
+}

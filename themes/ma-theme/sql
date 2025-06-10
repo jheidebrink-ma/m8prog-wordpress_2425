@@ -1,0 +1,32 @@
+
+bericht 1   auto
+bericht 2   auto
+Bericht 3   fiets
+Bericht 23  boot
+
+
+berichten
+id  titel      categorie_id
+1   bericht 1   1
+2   bericht 2   1
+3   bericht 3   2
+4   bericht 23  3
+5   bericht 99  
+
+categorie
+id  titel
+1   auto
+2   fiets
+3   boot
+4   step
+
+
+SELECT berichten.titel AS naam, categorie.titel AS categorie 
+FROM berichten 
+INNER JOIN categorie ON categorie_id=categorie.id;
+
+
+1   bericht 1   1
+2   bericht 2   1
+3   Bericht 3   2
+4   Bericht 23  3
